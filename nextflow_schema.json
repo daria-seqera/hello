@@ -8,13 +8,23 @@
         "testing_options": {
             "title": "Test options",
             "type": "object",
-            "fa_icon": "fas fa-terminal",
             "description": "Define test options.",
-            "help_text": "Specify some parameters.",
-            "required": [],
+            "required": ["just_parameter"],
             "properties": {
-                "orange_butterfly_and_fox": {
-                    "description": "Test parameter",
+                "just_parameter": {
+                    "description": "Test parameter 1",
+                    "type": "string"
+                },
+                "parameter_with_embedded_another_parameter": {
+                    "description": "Test parameter 2",
+                    "type": "string"
+                },
+                "parameter_referencing_another_parameter": {
+                    "description": "Test parameter 3",
+                    "type": "string"
+                },
+                "parameter_with_embedded_non_parameter": {
+                    "description": "Test parameter 4",
                     "type": "string"
                 }
 	    }
