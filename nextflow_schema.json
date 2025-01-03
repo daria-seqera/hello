@@ -1,0 +1,23 @@
+{
+    "$schema": "https://json-schema.org/draft/2020-12/schema",
+    "$id": "https://raw.githubusercontent.com/daria-seqera/hello/test-embedded-params/nextflow_schema.json",
+    "title": "daria-seqera/hello pipeline parameters",
+    "description": "Test",
+    "type": "object",
+    "$defs": {
+        "testing_options": {
+            "title": "Test options",
+            "type": "object",
+            "fa_icon": "fas fa-terminal",
+            "description": "Define test options.",
+            "help_text": "Specify some parameters.",
+            "required": ["orange_butterfly_and_fox"],
+            "properties": {
+                "orange_butterfly_and_fox": {
+                    "description": "Test parameter",
+                    "type": "string"
+                }
+	    }
+	}
+    }
+}
