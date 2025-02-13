@@ -14,18 +14,6 @@
                 "just_parameter": {
                     "description": "Test parameter 1",
                     "type": "string"
-                },
-                "parameter_with_embedded_another_parameter": {
-                    "description": "Test parameter 2",
-                    "type": "string"
-                },
-                "parameter_referencing_another_parameter": {
-                    "description": "Test parameter 3",
-                    "type": "string"
-                },
-                "parameter_with_embedded_non_parameter": {
-                    "description": "Test parameter 4",
-                    "type": "string"
                 }
 	    }
 	}
