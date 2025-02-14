@@ -17,7 +17,8 @@
                 },
                 "parameter_with_embedded_another_parameter": {
                     "description": "Test parameter 2",
-                    "type": "string"
+                    "type": "string",
+                    "default": "${params.just_parameter} and something else"
                 },
                 "parameter_referencing_another_parameter": {
                     "description": "Test parameter 3",
@@ -27,7 +28,7 @@
                     "description": "Test parameter 4",
                     "type": "string"
                 }
+            }
 	    }
-	}
     }
 }
