@@ -8,4 +8,4 @@ reports:
   "dag.html":
     display: "Nextflow workflow diagram"
   "output_*":
-    "My output files"
+    display: "My output files"
