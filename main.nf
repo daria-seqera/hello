@@ -1,13 +1,15 @@
 #!/usr/bin/env nextflow
 
 process sayHello {
+  publishDir "${params.publishDir}"
+
   input: 
     val x
   output:
-    stdout
+    path 'output_*'
   script:
     """
-    echo '$x world!'
+    echo '$x world!' > "output_$x"
     """
 }
 
