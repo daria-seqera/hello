@@ -27,6 +27,10 @@
                 "parameter_with_embedded_non_parameter": {
                     "description": "Test parameter 4",
                     "type": "string"
+                },
+                "parameter_referencing_another_parameter_and_string": {
+                    "description": "Test parameter 5",
+                    "type": "string"
                 }
             }
 	    }

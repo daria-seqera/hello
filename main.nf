@@ -12,6 +12,7 @@ process sayHello {
     echo 'parameter_with_embedded_another_parameter: $params.parameter_with_embedded_another_parameter'
     echo 'parameter_referencing_another_parameter: $params.parameter_referencing_another_parameter'
     echo 'parameter_with_embedded_non_parameter: $params.parameter_with_embedded_non_parameter'
+    echo 'parameter_referencing_another_parameter_and_string: $params.parameter_referencing_another_parameter_and_string'
     """
 }
 
