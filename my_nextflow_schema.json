@@ -1,0 +1,38 @@
+{
+    "$schema": "https://json-schema.org/draft/2020-12/schema",
+    "$id": "https://raw.githubusercontent.com/daria-seqera/hello/test-embedded-params/my_nextflow_schema.json",
+    "title": "daria-seqera/hello pipeline parameters",
+    "description": "Testing custom schema name",
+    "type": "object",
+    "$defs": {
+        "testing_options": {
+            "title": "Test options with custom schema name",
+            "type": "object",
+            "description": "Define test options.",
+            "required": ["just_parameter"],
+            "properties": {
+                "just_parameter": {
+                    "description": "Test parameter 1",
+                    "type": "string"
+                },
+                "parameter_with_embedded_another_parameter": {
+                    "description": "Test parameter 2",
+                    "type": "string",
+                    "default": "${params.just_parameter} and something else"
+                },
+                "parameter_referencing_another_parameter": {
+                    "description": "Test parameter 3",
+                    "type": "string"
+                },
+                "parameter_with_embedded_non_parameter": {
+                    "description": "Test parameter 4",
+                    "type": "string"
+                },
+                "parameter_referencing_another_parameter_and_string": {
+                    "description": "Test parameter 5",
+                    "type": "string"
+                }
+            }
+	    }
+    }
+}
